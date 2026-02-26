@@ -278,13 +278,13 @@
                     "kinematic": false,
                     "layer": "Procedural3",
                     "position": {
-                        "x": 1.8863604068756104,
-                        "y": 0.04474739730358124,
-                        "z": 10.358830451965332
+                        "x": 1.60033118724823,
+                        "y": 0.044734831899404526,
+                        "z": 10.351927757263184
                     },
                     "rotation": {
                         "x": 270.0,
-                        "y": 88.49214172363281,
+                        "y": 90.81278991699219,
                         "z": 0.0
                     }
                 },
@@ -1313,12 +1313,7 @@
     ],
     "proceduralParameters": {
         "ceilingMaterial": {
-            "color": {
-                "b": 0.4588235294117647,
-                "g": 0.5254901960784314,
-                "r": 0.7254901960784313
-            },
-            "name": "PureWhite"
+            "name": "OrangeDrywall 1"
         },
         "floorColliderThickness": 1.0,
         "lights": [
@@ -1636,7 +1631,12 @@
             "id": "wall|4|5.95|9.92|7.93|9.92",
             "layer": "Procedural3",
             "material": {
-                "name": "OrangeDrywall 1"
+                "color": {
+                    "b": 0.4588235294117647,
+                    "g": 0.5254901960784314,
+                    "r": 0.7254901960784313
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -1666,7 +1666,12 @@
             "id": "wall|4|1.98|9.92|5.95|9.92",
             "layer": "Procedural3",
             "material": {
-                "name": "OrangeDrywall 1"
+                "color": {
+                    "b": 0.4588235294117647,
+                    "g": 0.5254901960784314,
+                    "r": 0.7254901960784313
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -1696,7 +1701,12 @@
             "id": "wall|4|0.00|9.92|1.98|9.92",
             "layer": "Procedural3",
             "material": {
-                "name": "OrangeDrywall 1"
+                "color": {
+                    "b": 0.4588235294117647,
+                    "g": 0.5254901960784314,
+                    "r": 0.7254901960784313
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -1726,7 +1736,12 @@
             "id": "wall|4|0.00|9.92|0.00|13.89",
             "layer": "Procedural3",
             "material": {
-                "name": "OrangeDrywall 1"
+                "color": {
+                    "b": 0.4588235294117647,
+                    "g": 0.5254901960784314,
+                    "r": 0.7254901960784313
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -1756,7 +1771,12 @@
             "id": "wall|4|0.00|13.89|7.93|13.89",
             "layer": "Procedural3",
             "material": {
-                "name": "OrangeDrywall 1"
+                "color": {
+                    "b": 0.4588235294117647,
+                    "g": 0.5254901960784314,
+                    "r": 0.7254901960784313
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -1786,7 +1806,12 @@
             "id": "wall|4|7.93|9.92|7.93|13.89",
             "layer": "Procedural3",
             "material": {
-                "name": "OrangeDrywall 1"
+                "color": {
+                    "b": 0.4588235294117647,
+                    "g": 0.5254901960784314,
+                    "r": 0.7254901960784313
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -1956,7 +1981,12 @@
             "id": "wall|6|1.98|0.00|1.98|9.92",
             "layer": "Procedural1",
             "material": {
-                "name": "RedWall 1"
+                "color": {
+                    "b": 0.9176470588235294,
+                    "g": 0.9411764705882353,
+                    "r": 0.9490196078431372
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -1986,7 +2016,12 @@
             "id": "wall|6|1.98|9.92|5.95|9.92",
             "layer": "Procedural1",
             "material": {
-                "name": "RedWall 1"
+                "color": {
+                    "b": 0.9176470588235294,
+                    "g": 0.9411764705882353,
+                    "r": 0.9490196078431372
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -2017,7 +2052,12 @@
             "id": "wall|6|5.95|3.97|5.95|9.92",
             "layer": "Procedural1",
             "material": {
-                "name": "RedWall 1"
+                "color": {
+                    "b": 0.9176470588235294,
+                    "g": 0.9411764705882353,
+                    "r": 0.9490196078431372
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -2047,7 +2087,12 @@
             "id": "wall|6|3.97|3.97|5.95|3.97",
             "layer": "Procedural1",
             "material": {
-                "name": "RedWall 1"
+                "color": {
+                    "b": 0.9176470588235294,
+                    "g": 0.9411764705882353,
+                    "r": 0.9490196078431372
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -2077,7 +2122,12 @@
             "id": "wall|6|3.97|0.00|3.97|3.97",
             "layer": "Procedural1",
             "material": {
-                "name": "RedWall 1"
+                "color": {
+                    "b": 0.9176470588235294,
+                    "g": 0.9411764705882353,
+                    "r": 0.9490196078431372
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -2107,7 +2157,12 @@
             "id": "wall|6|1.98|0.00|3.97|0.00",
             "layer": "Procedural1",
             "material": {
-                "name": "RedWall 1"
+                "color": {
+                    "b": 0.9176470588235294,
+                    "g": 0.9411764705882353,
+                    "r": 0.9490196078431372
+                },
+                "name": "PureWhite"
             },
             "polygon": [
                 {
@@ -2138,12 +2193,7 @@
             "id": "wall|7|5.95|3.97|5.95|9.92",
             "layer": "Procedural1",
             "material": {
-                "color": {
-                    "b": 0.9176470588235294,
-                    "g": 0.9411764705882353,
-                    "r": 0.9490196078431372
-                },
-                "name": "PureWhite"
+                "name": "RedWall 1"
             },
             "polygon": [
                 {
@@ -2173,12 +2223,7 @@
             "id": "wall|7|5.95|9.92|7.93|9.92",
             "layer": "Procedural1",
             "material": {
-                "color": {
-                    "b": 0.9176470588235294,
-                    "g": 0.9411764705882353,
-                    "r": 0.9490196078431372
-                },
-                "name": "PureWhite"
+                "name": "RedWall 1"
             },
             "polygon": [
                 {
@@ -2208,12 +2253,7 @@
             "id": "wall|7|7.93|9.92|9.92|9.92",
             "layer": "Procedural1",
             "material": {
-                "color": {
-                    "b": 0.9176470588235294,
-                    "g": 0.9411764705882353,
-                    "r": 0.9490196078431372
-                },
-                "name": "PureWhite"
+                "name": "RedWall 1"
             },
             "polygon": [
                 {
@@ -2243,12 +2283,7 @@
             "id": "wall|7|9.92|3.97|9.92|9.92",
             "layer": "Procedural1",
             "material": {
-                "color": {
-                    "b": 0.9176470588235294,
-                    "g": 0.9411764705882353,
-                    "r": 0.9490196078431372
-                },
-                "name": "PureWhite"
+                "name": "RedWall 1"
             },
             "polygon": [
                 {
@@ -2278,12 +2313,7 @@
             "id": "wall|7|5.95|3.97|9.92|3.97",
             "layer": "Procedural1",
             "material": {
-                "color": {
-                    "b": 0.9176470588235294,
-                    "g": 0.9411764705882353,
-                    "r": 0.9490196078431372
-                },
-                "name": "PureWhite"
+                "name": "RedWall 1"
             },
             "polygon": [
                 {
