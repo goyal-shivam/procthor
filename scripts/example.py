@@ -1,4 +1,5 @@
 import sys, os
+from ai2thor.platform import CloudRendering
 # Ensure the LOCAL procthor package (not site-packages) is used for all imports
 _procthor_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if _procthor_root not in sys.path:
@@ -10,6 +11,8 @@ from procthor.generation import PROCTHOR_INITIALIZATION
 PROCTHOR_INITIALIZATION["commit_id"] = "ca10d107fb46cb051dba99af484181fda9947a28"
 # Remove the branch key so the commit_id is used directly
 PROCTHOR_INITIALIZATION.pop("branch", None)
+# Use the NVIDIA GPU via EGL headless rendering (no Xvfb needed)
+PROCTHOR_INITIALIZATION["platform"] = CloudRendering
 
 # ## EXTRA CHANGES THAT I DID AFTER ASKING FROM CHATGPT ARE ABOVE THIS COMMENT
 
