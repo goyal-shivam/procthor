@@ -1,4 +1,6 @@
-import sys, os
+import sys, os, time
+start_time = time.time()
+
 from ai2thor.platform import CloudRendering
 # Ensure the LOCAL procthor package (not site-packages) is used for all imports
 _procthor_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -12,16 +14,18 @@ PROCTHOR_INITIALIZATION["commit_id"] = "ca10d107fb46cb051dba99af484181fda9947a28
 # Remove the branch key so the commit_id is used directly
 PROCTHOR_INITIALIZATION.pop("branch", None)
 # Use the NVIDIA GPU via EGL headless rendering (no Xvfb needed)
-PROCTHOR_INITIALIZATION["platform"] = CloudRendering
+# PROCTHOR_INITIALIZATION["platform"] = CloudRendering
 
 # ## EXTRA CHANGES THAT I DID AFTER ASKING FROM CHATGPT ARE ABOVE THIS COMMENT
 
 from procthor.generation import PROCTHOR10K_ROOM_SPEC_SAMPLER, HouseGenerator
 
 house_generator = HouseGenerator(
-    split="train", seed=42, room_spec_sampler=PROCTHOR10K_ROOM_SPEC_SAMPLER
+    split="train", seed=182, room_spec_sampler=PROCTHOR10K_ROOM_SPEC_SAMPLER
 )
 house, _ = house_generator.sample()
 house.validate(house_generator.controller)
 
 house.to_json("temp.json")
+
+print(f"Total execution time: {time.time() - start_time:.4f} seconds")
