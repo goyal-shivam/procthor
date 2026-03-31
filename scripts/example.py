@@ -7,7 +7,8 @@ if _procthor_root not in sys.path:
     sys.path.insert(0, _procthor_root)
 
 from ai2thor.platform import CloudRendering
-from procthor.utils.types import SamplingVars
+from procthor.generation.room_specs import RoomSpec
+from procthor.utils.types import LeafRoom, MetaRoom, SamplingVars
 
 # Pin to a known-working Linux build commit (branch 'nanna'/'main' builds are no longer hosted)
 # This must be set BEFORE the first procthor import.
@@ -23,7 +24,20 @@ PROCTHOR_INITIALIZATION.pop("branch", None)
 from procthor.generation import PROCTHOR10K_ROOM_SPEC_SAMPLER, HouseGenerator
 
 house_generator = HouseGenerator(
-    split="train", seed=310326, room_spec="5-room"
+    split="train", seed=310326, room_spec=RoomSpec(
+            room_spec_id="kitchen-living-bedroom-room",
+            sampling_weight=1,
+            spec=[
+                MetaRoom(
+                    ratio=2,
+                    children=[
+                        LeafRoom(room_id=6, ratio=3, room_type="Kitchen"),
+                        LeafRoom(room_id=7, ratio=2, room_type="LivingRoom"),
+                    ],
+                ),
+                LeafRoom(room_id=2, ratio=1, room_type="Bedroom"),
+            ],
+        )
 )
 
 
